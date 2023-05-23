@@ -6,8 +6,6 @@ package agenda.control;
  */
 
 import agenda.modelo.Persona;
-import agenda.vista.PersonEditDialogController;
-import agenda.vista.PersonOverviewController;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.collections.FXCollections;

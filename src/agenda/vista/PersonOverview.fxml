@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda.vista.PersonOverviewController">
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="650.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda.control.PersonOverviewController">
    <children>
-      <SplitPane dividerPositions="0.29797979797979796" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.42833333333333334" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
@@ -28,7 +28,7 @@
                   </TableView>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="349.0" prefWidth="396.0" styleClass="background" stylesheets="@DarkTheme.css">
                <children>
                   <Label layoutY="35.0" text="Detalle persona" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
                   <GridPane layoutX="14.0" layoutY="49.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
@@ -51,12 +51,12 @@
                         <Label text="Codigo postal" GridPane.rowIndex="4" />
                         <Label text="Cumpleaños" GridPane.rowIndex="5" />
                         <Label text="Cuidad" GridPane.rowIndex="3" />
-                        <Label fx:id="nombreLable" text="Label" GridPane.columnIndex="1" />
-                        <Label fx:id="apellidoLable" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="calleLable" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="cuidadLable" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="codigoPostalLable" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="cumpleañosLable" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="nombreLable" styleClass="label-bright" stylesheets="@DarkTheme.css" text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="apellidoLable" styleClass="label-bright" stylesheets="@DarkTheme.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="calleLable" styleClass="label-bright" stylesheets="@DarkTheme.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="cuidadLable" styleClass="label-bright" stylesheets="@DarkTheme.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="codigoPostalLable" styleClass="label-bright" stylesheets="@DarkTheme.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="cumpleañosLable" styleClass="label-bright" stylesheets="@DarkTheme.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                      </children>
                   </GridPane>
                   <HBox layoutX="54.0" layoutY="231.0" spacing="15.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="5.0">

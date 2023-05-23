@@ -1,4 +1,4 @@
-package agenda.vista;
+package agenda.control;
 
 import agenda.modelo.Persona;
 import agenda.util.DateUtil;

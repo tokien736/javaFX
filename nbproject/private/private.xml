@@ -3,11 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PC-Jose/Documents/NetBeansProjects/JavaApplication1/src/agenda/vista/PersonOverview.fxml</file>
-            <file>file:/C:/Users/PC-Jose/Documents/NetBeansProjects/JavaApplication1/src/agenda/vista/PersonOverviewController.java</file>
-            <file>file:/C:/Users/PC-Jose/Documents/NetBeansProjects/JavaApplication1/src/agenda/control/MainApp.java</file>
-            <file>file:/C:/Users/PC-Jose/Documents/NetBeansProjects/JavaApplication1/src/agenda/modelo/Persona.java</file>
-            <file>file:/C:/Users/PC-Jose/Documents/NetBeansProjects/JavaApplication1/src/agenda/vista/RootLayout.fxml</file>
+            <file>file:/C:/Users/PC-Jose/Documents/NetBeansProjects/JavaApplication1/src/agenda/vista/DarkTheme.css</file>
         </group>
     </open-files>
 </project-private>

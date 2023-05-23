@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda.vista.PersonEditDialogController">
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="380.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda.control.PersonEditDialogController">
    <children>
       <GridPane layoutX="30.0" layoutY="95.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
         <columnConstraints>
@@ -32,12 +32,12 @@
             <Label text="Cuidad" GridPane.rowIndex="3" />
             <Label text="Codigo Postal" GridPane.rowIndex="4" />
             <Label text="Cumpleaños" GridPane.rowIndex="5" />
-            <TextField fx:id="nombreField" prefWidth="229.0" GridPane.columnIndex="1" />
-            <TextField fx:id="apellidoField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="calleField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="cuidadField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="codigoPostalField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField fx:id="cumpleañosField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="nombreField" prefWidth="229.0" styleClass="text-field" stylesheets="@DarkTheme.css" GridPane.columnIndex="1" />
+            <TextField fx:id="apellidoField" styleClass="text-field" stylesheets="@DarkTheme.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="calleField" styleClass="text-field" stylesheets="@DarkTheme.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="cuidadField" styleClass="text-field" stylesheets="@DarkTheme.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="codigoPostalField" styleClass="text-field" stylesheets="@DarkTheme.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="cumpleañosField" styleClass="text-field" stylesheets="@DarkTheme.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
       <HBox layoutX="119.0" layoutY="207.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="10.0">

@@ -1,4 +1,4 @@
-package agenda.vista;
+package agenda.control;
 
 import agenda.control.MainApp;
 import javafx.fxml.FXML;
