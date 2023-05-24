@@ -6,7 +6,9 @@ package agenda.control;
  */
 
 import agenda.modelo.Persona;
+import java.io.File;
 import java.io.IOException;
+import java.util.prefs.Preferences;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -104,6 +106,45 @@ public class MainApp extends Application {
             e.printStackTrace();
         }
     }
+    /**
+    * Devuelve la preferencia de archivo de persona, es decir, el archivo que se abrió por última vez.
+    * La preferencia se lee desde el registro específico del sistema operativo. si no hay tal
+    * se puede encontrar la preferencia, se devuelve nulo.
+    *
+    * @return
+    */
+    public File getPersonFilePath() {
+        Preferences prefs = Preferences.userNodeForPackage(MainApp.class);
+        String filePath = prefs.get("filePath", null);
+        if (filePath != null) {
+            return new File(filePath);
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Establece la ruta del archivo del archivo actualmente cargado. El camino se mantiene en
+    * el registro específico del sistema operativo.
+    *
+    * @param file el archivo o nulo para eliminar la ruta
+    */
+
+    public void setPersonFilePath(File file) {
+        Preferences prefs = Preferences.userNodeForPackage(MainApp.class);
+        if (file != null) {
+            prefs.put("filePath", file.getPath());
+
+            // Update the stage title.
+            primaryStage.setTitle("AddressApp - " + file.getName());
+        } else {
+            prefs.remove("filePath");
+
+            // Update the stage title.
+            primaryStage.setTitle("AddressApp");
+        }
+    }
+    
     /**
     * Abre un cuadro de diálogo para editar los detalles de la persona especificada. Si el usuario
     * hace clic en Aceptar, los cambios se guardan en el objeto de persona proporcionado y son verdaderos
